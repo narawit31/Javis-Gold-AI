@@ -164,7 +164,7 @@ if user_input:
         with st.chat_message("assistant"):
             with st.spinner(f"Javis กำลังประมวลผลข้อมูลให้คุณ {user_name}..."):
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model="gemini-2.0-flash",
                     contents=contents,
                     config=types.GenerateContentConfig(
                         system_instruction=SYSTEM_INSTRUCTION,
